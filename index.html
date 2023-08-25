@@ -1,694 +1,604 @@
-
-/*
-  Theme Name: Folio
-  Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-*/
-
-/*  General Styling
-/*-----------------------------------------------------------------------------------*/
-
-body {
-  background: #ffffff;
-  color: #898989;
-  font-family: 'Poppins', helvetica;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  overflow-x: hidden;
-  margin: 0 auto;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-h2 {
-  color: #292929;
-  font-weight: 600;
-}
-
-h4 {
-  color: #292929;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-a {
-  color: #292929;
-  text-decoration: none !important;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover {
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover, a:focus {
-  color: #b8a07e;
-  text-decoration: underline;
-}
-
-nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #999999;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  line-height: 14px;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-p {
-  margin: 25px 0;
-  padding: 0;
-  font-size: 15px;
-  color: #999999;
-  line-height: 28px;
-}
-
-::-moz-selection {
-  background: #b8a07e;
-  color: #ffffff;
-}
-
-::selection {
-  background: #b8a07e;
-  color: #fff;
-}
-
-.btn {
-  background: #333;
-  border: medium none;
-  border-radius: 0;
-  color: #fff;
-  font-size: 12px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  text-transform: uppercase;
-}
-
-.btn:hover, .btn:focus {
-  color: #fff;
-}
-
-.padDiv {
-  padding: 30px 20px;
-}
-
-.section-title {
-  margin-bottom: 70px;
-}
-
-.section-title h2 {
-  font-size: 25px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.form-control {
-  background-color: transparent;
-  border: 1px solid #999;
-  border-radius: 0;
-  color: #999999;
-  font-size: 12px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: 0.1em;
-  padding-left: 10px;
-  margin: 0 0 25px 0;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  outline: 0 none;
-}
-
-.paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
-
-.hvr-shutter-in-horizontal::before {
-  background: #333;
-}
-
-.hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Navbar Top
-/*-----------------------------------------------------------------------------------*/
-
-nav {
-  position: fixed;
-  background: #ffffff;
-  z-index: 1000;
-  width: 100%;
-  padding: 20px;
-  display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-}
-
-.nav-menu {
-  float: right;
-  line-height: 32px;
-  margin-bottom: 0;
-  padding-top: 16px;
-}
-
-nav ul li {
-  float: left;
-  margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  margin-left: 40px;
-}
-
-nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 14px;
-  color: #999999;
-  font-family: 'Poppins', helvetica;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-
-.logo {
-  float: left;
-}
-
-.logo img {
-  width: 100px;
-  height: 50px;
-}
-
-.responsive {
-  display: none;
-  font-size: 23px;
-}
-
-.active {
-  color: #afafaf;
-}
-
-/*----------------------------------------------------------------------------------*/
-/*  Header
-/*-----------------------------------------------------------------------------------*/
-
-#header {
-  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
-  height: 100vh;
-  width: 100%;
-}
-
-
-#header .header-content {
-  height: 100vh;
-  text-align: left;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.header-content h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.header-content p {
-  font-size: 13px;
-  letter-spacing: 5px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  color: #fff;
-  font-weight: 500;
-}
-
-.header-content .list-social li {
-  float: left;
-  margin-right: 20px;
-}
-
-.header-content .list-social li i {
-  color: #fff;
-  font-size: 15px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  About-us
-/*-----------------------------------------------------------------------------------*/
-
-#about {
-  width: 100%;
-  height: auto;
-  background: #ecd1b1;
-  padding-top: 190px;
-}
-
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #c77400;
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  object-fit: cover;
-}
-
-#about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  color: #000000;
-  text-align: left;
-}
-
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  color: #000000;
-  text-align: left;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*   Services
-/*-----------------------------------------------------------------------------------*/
-
-#services {
-  background: #ffffff;
-  position: relative;
-  padding-bottom: 80px;
-}
-
-.owl-item {
-  float: left;
-}
-.services-block span {
-  margin: 10px 0;
-  position: relative;
-  font-size: 13px;
-  color: #000000;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: block;
-}
-
-.services-block .separator {
-  margin: 0;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.services-block i {
-  font-size: 44px;
-  color: #000000;
-  line-height: 44px;
-}
-
-
-.services-carousel  .owl-stage-outer {
-  overflow: hidden;
-}
-
-.services-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.services-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 50%;
-  border: 0;
-  padding: 0 !important;
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.services-carousel .owl-dot.active {
-  background-color: #b8a07e;
-}
-
-/** recommendation carousel */
-.recommendations-block span {
-  height: auto;
-  margin: 10px 0;
-  position: relative;
-  font-size: 13px;
-  color: #292929;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: block;
-}
-
-.recommendations-block .separator {
-  margin: 0;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.recommendations-block i {
-  font-size: 44px;
-  color: #b8a07e;
-  line-height: 44px;
-}
-
-#recommendations {
-  background: #f7f7f7;
-  position: relative;
-  padding-bottom: 80px;
-}
-
-.recommendations-carousel  .owl-stage-outer {
-  overflow: hidden;
-}
-
-.recommendations-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.recommendations-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 50%;
-  border: 0;
-  padding: 0 !important;
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.recommendations-carousel .owl-dot.active {
-  background-color: #b8a07e;
-}
-
-
-.owl-nav {
-  display: none;
-}
-
-
-/*-----------------------------------------------------------------------------------*/
-/*  Portfolio
-/*-----------------------------------------------------------------------------------*/
-
-#portfolio {
-  background: #ecd1b1;
-  position: relative;
-  padding-bottom: 50px;
-}
-
-#portfolio .portfolio-list {
-  margin-bottom: 50px;
-}
-
-#portfolio .portfolio-list .nav {
-  display: inline-block;
-  margin: 0;
-}
-
-#portfolio .portfolio-list .nav li {
-  margin: 0 40px 0 0;
-  float: left;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  cursor: pointer;
-  font-family: 'Poppins', helvetica;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #131312;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#portfolio .portfolio-container {
-  display: inline-block;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.portfolio-thumbnail {
-  margin-bottom: 30px;
-  overflow: hidden;
-  min-height: 260px;
-}
-
-.portfolio-thumbnail img {
-  max-width: 100%;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Journal
-/*-----------------------------------------------------------------------------------*/
-
-#journal,  #journal-blog {
-  height: auto;
-  width: 100%;
-  background: #ecd1b1;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-#journal-blog {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
-#journal .journal-block {
-  display: inline-block;
-  height: auto;
-  width: 100%;
-}
-
-#journal .journal-block .journal-info {
-  position: relative;
-}
-
-.journal-block .journal-info img {
-  max-width: 100%;
-}
-
-.journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
-  position: relative;
-}
-
-.journal-block .journal-info .journal-txt h4 a {
-  display: block;
-  font-size: 19px;
-  line-height: 24px;
-  margin: 0 0 13px 0;
-  font-weight: 500;
-  color: #292929;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Contact
-/*-----------------------------------------------------------------------------------*/
-
-#contact {
-  background: #fff;
-  height: auto;
-  width: 100%;
-  color: #000000;
-}
-
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-details li {
-  padding-bottom: 10px;
-}
-
-#contact input, #contact textarea {
-  width: 100%;
-}
-
-
-#contact  #sendmessage {
-  color: #18d26e;
-  border: 1px solid #18d26e;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Radzuan - Data Analyst </title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <!--div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div-->
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#journal" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#recommendation" class="smoothScroll">Recommendation</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Project Overview</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>Data Analyst, Businness Intelegent, Data Organize, Data Enthusiast</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/radzuanmh"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/aoimoriarty/"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://linkedin.com/in/radzuan-m-hanif/"><i class="ion-social-linkedin"></i></a></li>
+          <li><a href="https://wa.me/682229351150"><i class="ion-social-whatsapp"></i></a></li>
+          <li><a href="https://drive.google.com/file/d/145L2PQoBLse5Xf98FDQ71rFZy1-WHExn/view?usp=sharing"><i
+                class="ion-tshirt-outline"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div id="services">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>ABOUT ME</h2>
+          </div>
+        </div>
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="/images/me.JPG" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">A data analytics Enthusiast, graduated from Brawijaya University as bachelor of Aquaculture
+              degree and data analyst at RevoU. </p>
+            <p class="separator">I have worked in Export Environtment as General Affair with hands-on project including
+              data reporting external and internal relation in ± 5 years. Appropriate in processing data into applicable
+              insight and recommendation. Particular intently on my technical skill i recently finished my study at
+              RevoU fullstack data analyst in ± 3 month which hands-on data cleaning, data preparation and data
+              manipulation with Excel/spreadsheet, SQL, Python as a tools and data vizualization by using
+              GoogleDataStudio/looker and Tableau. I looking for an occasion at global company taking advantages of my
+              knowledge and skills proved by academic records, both theoretical and practical experiences. I am
+              dedicated to delivering optimum results in every goal. </p>
+            <a href="https://drive.google.com/file/d/1FfSybCn-a-oT4Wd8xDbHorjPePkyzg17/view?usp=sharing">
+              <div class="btn">Download CV</div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section recommendation services -->
   
-}
+  <div id="services">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>SKILLSET</h2>
+    </div>
+  </div>
 
-#contact  #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
+  <div id="services">
+    <div class="container">
 
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
-  display: block;
-}
+      <div class="services-carousel owl-theme">
 
-#contact .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
+        <div class="services-block">
 
-/*-----------------------------------------------------------------------------------*/
-/*  Footer
-/*-----------------------------------------------------------------------------------*/
+          <i class="ion-ios-browsers-outline"></i>
+          <span>Data Cleaning</span>
+          <p class="separator">This involves handling missing values, removing duplicates, standardizing data formats,
+            and addressing outliers or errors in the dataset </p>
 
-#footer {
-  background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+        </div>
 
-#footer .socials-media {
-  width: 100%;
-}
+        <div class="services-block">
 
-#footer .socials-media ul {
-  display: inline-block;
-  float: none;
-  margin: 0 0 20px 0;
-}
+          <i class="ion-ios-lightbulb-outline"></i>
+          <span>Data Manipulation</span>
+          <p class="separator">Working with complex data sets, filtering, aggregating, and transforming data to derive
+            meaningful insights. </p>
 
-#footer .socials-media ul li {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+        </div>
 
-#footer .socials-media ul li a {
-  font-size: 24px;
-  color: #000000;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  background: transparent;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
+        <div class="services-block">
 
-#footer .socials-media ul li a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
+          <i class="ion-ios-color-wand-outline"></i>
+          <span>Data Visualization</span>
+          <p class="separator">Additionally, data analysts should be skilled in using data visualization tools like
+            Tableau, Power BI, or Python libraries such as Matplotlib and Seaborn </p>
 
-#footer p {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  margin-top: 0;
-  text-transform: uppercase;
-}
+        </div>
 
-.credits {
-  font-size: 13px;
-}
+        <div class="services-block">
+
+          <i class="ion-social-android-outline"></i>
+          <span>Collaboration and Teamwork</span>
+          <p class="separator">able to work effectively in a team environment, contribute their expertise, and
+            communicate ideas and findings to colleagues </p>
+
+        </div>
+
+        <div class="services-block">
+
+          <i class="ion-ios-analytics-outline"></i>
+          <span>Statistical Analysis</span>
+          <p class="separator">Understanding statistical concepts such as hypothesis testing, regression analysis, and
+            probability distributions is important for drawing accurate conclusions from data </p>
+
+        </div>
+
+        <div class="services-block">
+
+
+          <i class="ion-arrow-graph-up-right"></i>
+          <span>Analytical Thinking</span>
+          <p class="separator">Able to approach problems logically, ask the right questions, and think critically to
+            solve analytical challenges. </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>PORTFOLIO</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="https://drive.google.com/file/d/1yTxKdNLDH2VRdKLQG9_RGtRF6u6oHo4V/view?usp=sharing"><img
+                  src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="https://drive.google.com/file/d/1yTxKdNLDH2VRdKLQG9_RGtRF6u6oHo4V/view?usp=sharing">Fashion
+                    E-Comm Customer Analysis by SQL(link)</a></h4>
+                <p class="separator">Data analyst of The Look Clothing E-Commerce, Retention Analyst by Co-Hort Analyst
+                  for Every Users Order
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="https://drive.google.com/file/d/1lsklXSzoR51fZKdoRfGobEcW_X_9Ny1F/view?usp=sharing"><img
+                  src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a
+                    href="https://drive.google.com/file/d/1lsklXSzoR51fZKdoRfGobEcW_X_9Ny1F/view?usp=sharing">Customer
+                    Segmented by Python(link)</a></h4>
+                <p class="separator">data analysis in an Indonesian investment startup, Do the Exploratory Data Analysis
+                  (EDA) tools for describe the statistic data and Clustering Analysis by K-means </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="https://drive.google.com/file/d/124qOMGyyIQpbkD3IN5BtZcxQxoCQQGx5/view?usp=sharing"><img
+                  src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="https://drive.google.com/file/d/124qOMGyyIQpbkD3IN5BtZcxQxoCQQGx5/view?usp=sharing">Churn
+                    Analysis and Data viz(link)</a></h4>
+                <p class="separator">Churn customer analysis Using Elbow Method & Silhouette Analysis in Python and
+                  present by tableau for data vizualization
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="https://drive.google.com/file/d/1OCIbzCyjhCWNmVfvmsTpZ-7sczClZF4v/view?usp=sharing"><img
+                  src="images/portfolio/stas3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a
+                    href="https://drive.google.com/file/d/1OCIbzCyjhCWNmVfvmsTpZ-7sczClZF4v/view?usp=sharing">Statistical
+                    Analysis by Spreadsheed(link)</a></h4>
+                <p class="separator">Provide statistical analysis for Malaysia Property ABC Company to find the
+                  characteristic customer and how to Segmented
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="https://public.tableau.com/app/profile/radzuan.m.hanif/viz/shared/6JH6N42PF"><img
+                  src="images/portfolio/VIZ2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="https://public.tableau.com/app/profile/radzuan.m.hanif/viz/shared/6JH6N42PF">Data
+                    Vizualization by Tableau (link)</a></h4>
+                <p class="separator">Visualization of data Churn Customer Europe Bank and analysis customer segmented by
+                  Tableau Tools
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+  <div id="recommendation" class="Recommendation"></div>
+  <div id="services">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>recommendation</h2>
+      </div>
+    </div>
+  <div id="recommendations">
+    <div class="container">
+      <div class="recommendations-carousel owl-theme">
+        <div class="recommendations-block col-12 row">
+          <div class="col-4 pr-4">
+            <div class="about-img">
+              <img src="/images/vitro.jpg" class="img-responsive" alt="me" width="1000px">
+            </div>
+          </div>
+          <div class="pl-12 col-8">
+            <label for="title"></label>
+          </div>
+        </div>
+        <div class="recommendations-block col-12 row">
+          <div class="col-4 pr-4">
+            <div class="about-img">
+              <img src="/images/ka jal.jpg" class="img-responsive" alt="me" width="1000px">
+            </div>
+          </div>
+          <div class="pl-12 col-8">
+            <label for="title"></label>
+          </div>
+        </div>
+        <div class="recommendations-block col-12 row">
+          <div class="col-4 pr-4">
+            <div class="about-img">
+              <img src="/images/acul.jpg" class="img-responsive" alt="me" width="1000px">
+            </div>
+          </div>
+          <div class="pl-12 col-8">
+            <label for="title"></label>
+          </div>
+        </div>
+        <div class="recommendations-block col-12 row">
+          <div class="col-4 pr-4">
+            <div class="about-img">
+              <img src="/images/danil.JPG" class="img-responsive" alt="me" width="1000px">
+            </div>
+          </div>
+          <div class="pl-12 col-8">
+            <label for="title"></label>
+          </div>
+          <div class="recommendations-block col-12 row">
+            <div class="col-4 pr-4">
+              <div class="about-img">
+                <img src="/images/ka dan.jpg" class="img-responsive" alt="me" width="1000px">
+              </div>
+            </div>
+            <div class="pl-12 col-8">
+              <label for="title"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end section recommendation services -->
+    </div>
+  </div>
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Project Overview</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all" id="all-portfolio">all</li>
+              <li class="filter" data-filter=".branding">Spreadsheet</li>
+              <li class="filter" data-filter=".mockups">SQL</li>
+              <li class="filter" data-filter=".uikits">Python</li>
+              <li class="filter" data-filter=".webdesign">Data Viz</li>
+              <li class="filter" data-filter=".photography">Statistical</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding ">
+              <a class="popup-img" href="images/portfolio/stas3.jpg">
+                <img src="images/portfolio/stas3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail branding">
+              <a class="popup-img" href="images/portfolio/stas1.jpg">
+                <img src="images/portfolio/stas1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail branding">
+              <a class="popup-img" href="images/portfolio/stas2.jpg">
+                <img src="images/portfolio/stas2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups">
+              <a class="popup-img" href="images/portfolio/sql.jpg">
+                <img src="images/portfolio/sql.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail mockups">
+              <a class="popup-img" href="images/portfolio/sql3.jpg">
+                <img src="images/portfolio/sql3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail mockups">
+              <a class="popup-img" href="images/portfolio/sql2.jpg">
+                <img src="images/portfolio/sql2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits">
+              <a class="popup-img" href="images/portfolio/python.jpg">
+                <img src="images/portfolio/python.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail uikits">
+              <a class="popup-img" href="images/portfolio/pyton1.jpg">
+                <img src="images/portfolio/pyton1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail uikits">
+              <a class="popup-img" href="images/portfolio/python2.jpg">
+                <img src="images/portfolio/python2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
+              <a class="popup-img" href="images/portfolio/viz1.jpg">
+                <img src="images/portfolio/viz1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
+              <a class="popup-img" href="images/portfolio/VIZ2.jpg">
+                <img src="images/portfolio/VIZ2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail webdesign">
+              <a class="popup-img" href="images/portfolio/viz3.jpg">
+                <img src="images/portfolio/viz3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all photography">
+              <a class="popup-img" href="images/portfolio/churn.jpg">
+                <img src="images/portfolio/churn.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail photography">
+              <a class="popup-img" href="images/portfolio/churn2.jpg">
+                <img src="images/portfolio/churn2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail photography">
+              <a class="popup-img" href="images/portfolio/churn3.jpg">
+                <img src="images/portfolio/churn3.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+  
+
+
+    <!-- start sectoion contact -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+
+                <h2 class="mb-30">FOR MORE INFORMATION</h2>
+
+                <ul class="contact-details">
+                  <li><span>Sukolilo, Surabaya</span></li>
+                  <li><span>East Java, INDONESIA</span></li>
+                  <li><span>+62 82229351150</span></li>
+                  <li><span>radzuanmh@gmail.com</span></li>
+                </ul>
+
+              </div>
+            </div>
+
+
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/radzuanmh"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/aoimoriarty/"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://wa.me/682229351150"><i class="ion-social-whatsapp"></i></a></li>
+          <li><a href="https://linkedin.com/in/radzuan-m-hanif/"><i class="ion-social-linkedin"></i></a></li>
+          <li><a href="https://drive.google.com/file/d/145L2PQoBLse5Xf98FDQ71rFZy1-WHExn/view?usp=sharing"><i
+                class="ion-tshirt-outline"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Folio. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
