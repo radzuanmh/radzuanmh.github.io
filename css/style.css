@@ -92,7 +92,7 @@ p {
 
 ::-moz-selection {
   background: #b8a07e;
-  color: #ffffff;
+  color: #fff;
 }
 
 ::selection {
@@ -178,7 +178,7 @@ p {
 
 nav {
   position: fixed;
-  background: #ffffff;
+  background: #fff;
   z-index: 1000;
   width: 100%;
   padding: 20px;
@@ -284,19 +284,19 @@ nav ul li a {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  About-us
+/*  Aout-us
 /*-----------------------------------------------------------------------------------*/
 
 #about {
   width: 100%;
   height: auto;
-  background: #ecd1b1;
+  background: #f7f7f7;
   padding-top: 190px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #c77400;
+  border: 20px solid #b8a07e;
 }
 
 #about .div-img-bg .about-img img {
@@ -311,14 +311,12 @@ nav ul li a {
 #about .about-descr .p-heading {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
-  color: #000000;
   text-align: left;
 }
 
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
-  color: #000000;
   text-align: left;
 }
 
@@ -327,7 +325,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #ffffff;
+  background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
 }
@@ -339,7 +337,7 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #000000;
+  color: #292929;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -354,7 +352,7 @@ nav ul li a {
 
 .services-block i {
   font-size: 44px;
-  color: #000000;
+  color: #b8a07e;
   line-height: 44px;
 }
 
@@ -386,7 +384,6 @@ nav ul li a {
 
 /** recommendation carousel */
 .recommendations-block span {
-  height: auto;
   margin: 10px 0;
   position: relative;
   font-size: 13px;
@@ -432,7 +429,7 @@ nav ul li a {
   border-radius: 50%;
   border: 0;
   padding: 0 !important;
-  background-color: #ddd;
+  background-color: #ddd;#
   cursor: pointer;
 }
 
@@ -451,7 +448,6 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #portfolio {
-  background: #ecd1b1;
   position: relative;
   padding-bottom: 50px;
 }
@@ -484,7 +480,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #131312;
+  color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -515,7 +511,7 @@ nav ul li a {
 #journal,  #journal-blog {
   height: auto;
   width: 100%;
-  background: #ecd1b1;
+  background: #f7f7f7;
   padding-bottom: 60px;
   position: relative;
 }
@@ -578,10 +574,8 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #contact {
-  background: #fff;
   height: auto;
   width: 100%;
-  color: #000000;
 }
 
 .contact-details {
@@ -607,7 +601,6 @@ nav ul li a {
   padding: 15px;
   font-weight: 600;
   margin: 15px;
-  
 }
 
 #contact  #errormessage {
@@ -660,7 +653,7 @@ nav ul li a {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #000000;
+  color: #999;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
